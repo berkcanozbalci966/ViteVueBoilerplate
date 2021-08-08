@@ -33,6 +33,7 @@
 
 <script lang="ts">
 import { ref, defineComponent } from 'vue'
+
 export default defineComponent({
   name: 'HelloWorld',
   props: {
@@ -43,10 +44,7 @@ export default defineComponent({
   },
   setup: () => {
     const count = ref(0)
-    const abc = ref(2)
-    if (abc.value == 2) {
-      console.log(2)
-    }
+
     return { count }
   },
 })
